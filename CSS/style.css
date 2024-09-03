@@ -1,0 +1,33 @@
+:root {
+    /* Define color variables */
+    --primary-color: #0d667e;
+    --shadow-color-light: rgba(0, 0, 0, 0.1);
+    
+    /* Define font sizes */
+    --font-size-small: 16px;
+    --font-size-large: 30px;
+    
+    /* Define spacing */
+    --margin-top: 20px;
+    --padding: 15px;
+    --gap-small: 5px;
+    --gap-large: 20px;
+    
+    /* Define width */
+    --logo-width: 120px;
+    --offcanvas-width-sm: 200px;
+    --offcanvas-width-md: 250px;
+    --section-width : 93vw;
+    --section-width: 80%; /* Example value for section width */
+    --heading-font-size: 34px; /* Font size for banner heading */
+    --animation-duration: 2s; /* Default animation duration */
+    --text-color: #333; /* Text color variable */
+    --image-width: 300px; /* Image width */
+    --animation-delay-1: 1s; /* Delay for text2 animation */
+    --animation-delay-2: 1.5s; /* Delay for text3 animation */
+    --keyword-height: 24px; /* Height for changing keywords */
+    --slideme-animation-duration: 16s; /* Duration for slideme animation */
+}
+*{
+    font-family: "Roboto", sans-serif;
+}

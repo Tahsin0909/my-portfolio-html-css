@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/navbar.css">
+    <link rel="stylesheet" href="./CSS/banner.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- header  -->
+    <header class="">
+
+
+
+
+        <!-- navbar  -->
+        <nav class="t-main-nav">
+            <div class="t_nav_container">
+                <a href="">
+                    <img class="logo" src="./assets/logo (2).png" alt="">
+                </a>
+
+                <div class="t-nav-menu">
+
+                    <!-- drawer button  -->
+                    <svg data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop"
+                        aria-controls="offcanvasWithBackdrop" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        width="30px" height="30px" viewBox="0,0,256,256">
+                        <g fill="#0d667e" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                            font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                            style="mix-blend-mode: normal">
+                            <g transform="scale(4,4)">
+                                <path d="M7,29v5l50,1v-7zM7,11v6h50v-6zM7,46v7l50,-1v-5z"></path>
+                            </g>
+                        </g>
+                    </svg>
+
+                    <!-- drawer item  -->
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
+                        aria-labelledby="offcanvasWithBackdropLabel">
+                        <div class="offcanvas-header ">
+                            <a href="">
+                                <img class="logo" src="./assets/logo (2).png" alt="">
+                            </a>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body drawer-nav-link">
+                            <a class="navLink" href="#home">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20px" height="20px"
+                                    viewBox="0,0,256,256">
+                                    <g fill="#0d667e" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                        stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                        stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                        font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                        <g transform="scale(5.12,5.12)">
+                                            <path
+                                                d="M24.96289,1.05469c-0.20987,0.00724 -0.41214,0.08036 -0.57812,0.20898l-23,17.94727c-0.43579,0.33978 -0.51361,0.96851 -0.17383,1.4043c0.33978,0.43579 0.96851,0.51361 1.4043,0.17383l1.38477,-1.08008v26.29102c0.00006,0.55226 0.44774,0.99994 1,1h13.83203c0.10799,0.01785 0.21818,0.01785 0.32617,0h11.67383c0.10799,0.01785 0.21818,0.01785 0.32617,0h13.8418c0.55226,-0.00006 0.99994,-0.44774 1,-1v-26.29102l1.38477,1.08008c0.2819,0.21983 0.65967,0.27257 0.991,0.13833c0.33133,-0.13423 0.56586,-0.43504 0.61526,-0.7891c0.0494,-0.35406 -0.09386,-0.70757 -0.37579,-0.92736l-7.61523,-5.94141v-7.26953h-6v2.58594l-9.38477,-7.32227c-0.18607,-0.14428 -0.41707,-0.21828 -0.65234,-0.20898zM25,3.32227l19,14.82617v26.85156h-12v-19h-14v19h-12v-26.85156zM37,8h2v3.70898l-2,-1.5625zM20,28h10v17h-10z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span>
+                                    Home
+                                </span>
+                            </a>
+                            <a class="navLink" href="#aboutMe">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20px" height="20px"
+                                    viewBox="0,0,256,256">
+                                    <g fill="#0d667e" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                        stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                        stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                        font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                        <g transform="scale(5.12,5.12)">
+                                            <path
+                                                d="M25,1c-13.77734,0 -25,9.87891 -25,22.1875c0,6.04688 2.77344,11.47656 7.21875,15.5c-0.67187,2.07422 -2.17187,3.71094 -3.6875,4.96875c-0.81641,0.67578 -1.59766,1.25391 -2.21875,1.8125c-0.30859,0.27734 -0.58984,0.55859 -0.8125,0.90625c-0.22266,0.34766 -0.42187,0.84375 -0.28125,1.375l0.125,0.40625l0.34375,0.21875c1.28906,0.74219 2.89453,0.87109 4.625,0.75c1.73047,-0.12109 3.61719,-0.51953 5.46875,-1.03125c3.59375,-0.99219 6.96875,-2.40625 8.75,-3.1875c1.75781,0.36719 3.52344,0.59375 5.375,0.59375c13.77734,0 25,-9.87891 25,-22.1875c0,-12.30469 -11.125,-22.3125 -24.90625,-22.3125zM25,3c12.82031,0 22.90625,9.21484 22.90625,20.3125c0,11.08984 -10.17578,20.1875 -23,20.1875c-1.82812,0 -3.55078,-0.17969 -5.28125,-0.5625l-0.34375,-0.09375l-0.28125,0.15625c-1.67187,0.73828 -5.20703,2.17969 -8.75,3.15625c-1.77344,0.48828 -3.53906,0.86328 -5.0625,0.96875c-1.01953,0.07031 -1.64844,-0.17187 -2.34375,-0.34375c0.49609,-0.42578 1.17578,-0.93359 1.96875,-1.59375c1.74219,-1.44531 3.83203,-3.45703 4.5625,-6.4375l0.15625,-0.625l-0.5,-0.375c-4.40625,-3.73437 -7.03125,-8.875 -7.03125,-14.5625c0,-11.08984 10.17578,-20.1875 23,-20.1875zM23.8125,12.8125c-0.30078,0 -0.40625,0.17578 -0.40625,0.375v2.625c0,0.30078 0.20703,0.375 0.40625,0.375h2.375c0.30078,0 0.40625,-0.17578 0.40625,-0.375v-2.625c0,-0.30078 -0.20703,-0.375 -0.40625,-0.375zM23.90625,20.09375c-0.30078,0 -0.40625,0.20703 -0.40625,0.40625v13.40625c0,0.30078 0.20703,0.40625 0.40625,0.40625v0.09375h2.28125c0.30078,0 0.40625,-0.20703 0.40625,-0.40625v-13.5c0,-0.30078 -0.20703,-0.40625 -0.40625,-0.40625z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span>
+                                    About Me
+                                </span>
+                            </a>
+                            <a class="navLink" href="#skill">
+                                <img width="20px" height="20px" src="./assets/icons/skill.png" alt="">
+                                <span>My Skill</span></a>
+                            <a class="navLink" href="#portfolio">
+                                <img width="20px" height="20px" src="./assets/icons/portfolio.png" alt="">
+                                <span>
+                                    Portfolio
+                                </span>
+                            </a>
+                            <a class="navLink" href="#contact">
+                                <img width="20px" height="20px" src="./assets/icons/contact.png" alt="">
+                                <span>
+                                    Contact
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="t_nav_link">
+                    <a class="navLink" href="#home">Home</a>
+                    <a class="navLink" href="#aboutMe">About Me</a>
+                    <a class="navLink" href="#skill">My Skill</a>
+                    <a class="navLink" href="#portfolio">Portfolio</a>
+                    <a class="navLink" href="#contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar  -->
+        <!-- banner  -->
+
+        <section class="banner-container">
+            <section class="banner">
+                <div class="banner-content">
+
+                    <div class="banner-text animated-text">
+                        <div class="banner-heading  m-0 text1">
+                            HI, I am Tahsin Zaman
+                        </div>
+                        <div class="text2">
+                            <p>
+                                A Passionate
+                                <strong class="codinfox-changing-keywords" id="change">
+                                    <b class="hidden">Web Developer</b><br />
+                                    <b class="hidden">Continuous learner</b><br />
+                                    <b class="hidden">Researcher</b><br />
+                                    <b class="hidden">Book Lover</b>
+                                </strong>
+                            </p>
+
+                        </div>
+                        <div class="mt-2 text3">
+                            I aim to leverage my web development expertise in team leadership, project management, and
+                            technical proficiency to drive innovation and excellence for company growth. I am committed
+                            to
+                            continuous learning to stay ahead of industry trends.
+                        </div>
+                    </div>
+
+
+                    <div class="image-container">
+                        <img id="myImage" src="./assets/IMG_6466__2_-removebg-preview.png" alt="">
+
+                    </div>
+
+                </div>
+            </section>
+        </section>
+
+        <!-- banner  -->
+    </header>
+    <!-- header  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

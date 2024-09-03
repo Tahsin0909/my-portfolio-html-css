@@ -1,0 +1,132 @@
+
+.banner-container {
+    background-image: linear-gradient(to right, #FFFDE4, var(--primary-color));
+}
+
+.banner {
+    width: var(--section-width);
+    margin: auto;
+    height: 100vh;
+}
+
+.banner-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-heading {
+    font-size: var(--heading-font-size);
+    font-weight: bold;
+}
+
+.banner-text {
+    width: 50%;
+    color: var(--primary-color);
+}
+
+.image-container {
+    border: 1px solid red;
+    width: 50%;
+}
+
+#myImage {
+    width: var(--image-width);
+}
+
+/* text- animation  */
+
+.animated-text div {
+    animation-duration: var(--animation-duration);
+    animation-fill-mode: both;
+}
+
+.text1 {
+    animation-name: example;
+    animation-delay: 0s;
+}
+
+.text2 {
+    animation-name: example;
+    animation-delay: var(--animation-delay-1);
+}
+
+.text3 {
+    font-size: 20px;
+    animation-name: example;
+    animation-delay: var(--animation-delay-2);
+}
+
+@keyframes example {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.codinfox-changing-keywords {
+    vertical-align: top;
+    overflow: hidden;
+    height: var(--keyword-height);
+    position: relative;
+    display: inline-block;
+    width: 250px;
+}
+
+.hidden {
+    position: absolute;
+    top: var(--keyword-height);
+    display: inline-block;
+    width: 250px;
+    opacity: 0;
+    animation: slideme var(--slideme-animation-duration) infinite;
+}
+
+.hidden:nth-child(3) {
+    animation-delay: 4s;
+}
+
+.hidden:nth-child(5) {
+    animation-delay: 8s;
+}
+
+.hidden:nth-child(7) {
+    animation-delay: 12s;
+}
+
+@keyframes slideme {
+    0% {
+        top: 20px;
+        opacity: 1;
+    }
+
+    5% {
+        top: 0px;
+        opacity: 1;
+    }
+
+    10% {
+        top: 0;
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 1;
+        top: 0;
+    }
+
+    30% {
+        opacity: 1;
+        top: 20px;
+    }
+}
+
+/* text- animation  */

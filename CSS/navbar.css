@@ -1,0 +1,179 @@
+/* Main navigation styles */
+.t-main-nav {
+    position: fixed;
+    top: 2%;
+    left: 0;
+    z-index: 100;
+    right: 0;
+    margin: 0 auto;
+    width: var(--section-width);
+    border-radius: 20px;
+    /* background-color: white; */
+    padding: var(--padding);
+    box-shadow: 0 4px 6px -1px var(--shadow-color-light), 0 2px 4px -2px var(--shadow-color-light);
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    /* box-shadow: 0 20px 25px -5px var(--shadow-color-light), 0 8px 10px -6px var(--shadow-color-light); */
+}
+
+.t_nav_container {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center;
+}
+
+.t_nav_link>a {
+    margin: 0 10px;
+    /* font-size: var(--font-size-small); */
+}
+
+.drawer-nav-link {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-large);
+}
+
+.logo {
+    width: var(--logo-width);
+}
+
+.offcanvas-header {
+    margin-top: 22px;
+}
+
+/* Base styles for links */
+.navLink {
+    width: fit-content;
+    text-decoration: none;
+    /* Remove default underline */
+    position: relative;
+    /* Create a positioning context for the pseudo-element */
+    color: var(--primary-color);
+    /* Default color for the link */
+}
+
+/* Pseudo-element for underline */
+.navLink::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color);
+    /* Color of the underline */
+    transform: scaleX(0);
+    /* Start with the underline scaled down to 0 width */
+    transform-origin: left;
+    /* Scale transformation from the left edge */
+    transition: transform 0.3s ease;
+    /* Smooth transition for the underline */
+}
+
+/* Hover effect */
+.navLink:hover::after {
+    transform: scaleX(1);
+    /* Scale the underline to full width */
+}
+
+.navLink:hover>i {
+    fill: var(--primary-color) !important;
+}
+
+.navLink.active {
+
+    color: var(--primary-color);
+    /* Ensure the active link stays with the primary color */
+}
+
+/* Extra small devices (phones, 375px and down) */
+@media only screen and (max-width: 376px) {
+    .t_nav_link {
+        display: none;
+    }
+
+    .navLink {
+
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .offcanvas {
+        width: 200px !important;
+    }
+}
+
+/* Small devices (large phones, 376px and up) */
+@media only screen and (min-width: 377px) and (max-width: 635px) {
+    .t_nav_link {
+        display: none;
+    }
+
+    .navLink {
+
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .offcanvas {
+        width: 250px !important;
+    }
+}
+
+/* Medium devices (portrait tablets and smaller devices, 576px and up) */
+@media only screen and (min-width: 635px) and (max-width: 767px) {
+    .t-nav-menu {
+        display: none;
+    }
+}
+
+/* Large devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 767px) and (max-width: 992px) {
+    .t-nav-menu {
+        display: none;
+    }
+}
+
+/* Extra large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .t-nav-menu {
+        display: none;
+    }
+
+}
+
+/* Extra extra large devices (large laptops/desktops, 1200px to 1919px) */
+@media only screen and (min-width: 1200px) and (max-width: 1919px) {
+    .t-nav-menu {
+        display: none;
+    }
+
+    .t_nav_link>a {
+        font-size: var(--font-size-small);
+    }
+}
+
+/* 2K resolution devices (desktops, 1920px to 2559px) */
+@media only screen and (min-width: 1920px) and (max-width: 2559px) {
+    .t-nav-menu {
+        display: none;
+    }
+
+    .t_nav_link>a {
+        font-size: var(--font-size-large);
+    }
+}
+
+/* 4K resolution devices (ultra-wide screens, 2560px and up) */
+@media only screen and (min-width: 2560px) {
+    .t-nav-menu {
+        display: none;
+    }
+
+    .t_nav_link>a {
+        font-size: var(--font-size-large);
+    }
+}
